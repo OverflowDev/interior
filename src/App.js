@@ -9,7 +9,7 @@ import Session from './pages/Session';
 
 function App() {
   return (
-    <>
+    <div className='overflow-hidden'>
       <Router>
         <Navbar />
 
@@ -21,7 +21,7 @@ function App() {
         </Routes>
       </Router>
 
-    </>
+    </div>
   );
 }
 

@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom'
+import Faq from './Faq'
 import Room from '../assets/svg/miniRoom1.svg'
 import RoomOne from '../assets/svg/miniRoom2.svg'
 import RoomTwo from '../assets/svg/miniRoom3.svg'
@@ -182,10 +183,25 @@ function Home() {
     </section>
 
     {/* FaQ  */}
-    <section>
-        
+    <section className="text-gray-900 bg-gray-100 py-8 md:mt-36 mt-8">
+        <div className="container px-5 py-8 mx-auto">
+            <div className="text-center mb-8">
+                <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
+                Frequently Asked Question
+                </h1>
+                <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+                The most common questions about how our business works and what
+                can do for you.
+                </p>
+            </div>
+            
+            <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+                <div className="w-full lg:w-1/2 px-4 py-2">
+                    <Faq />
+                </div>
+            </div>
+        </div>
     </section>
-
 
     </>
   )
