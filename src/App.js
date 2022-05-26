@@ -5,6 +5,9 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Blog from './pages/Blog';
 import Session from './pages/Session';
+import Footer from './pages/Footer';
+import Partner from './pages/Partner';
+import Career from './pages/Career';
 
 
 function App() {
@@ -18,7 +21,11 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/blog' element={<Blog />} />
           <Route path='/session' element={<Session />} />
+          <Route path='/career' element={<Career />} />
+          <Route path='/partner' element={<Partner />} />
         </Routes>
+
+        <Footer />
       </Router>
 
     </div>
