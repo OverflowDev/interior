@@ -1,11 +1,11 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 import Navbar from './components/layouts/Navbar';
+import Footer from './components/layouts/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Blog from './pages/Blog';
 import Session from './pages/Session';
-import Footer from './pages/Footer';
 import Partner from './pages/Partner';
 import Career from './pages/Career';
 

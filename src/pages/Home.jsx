@@ -112,21 +112,21 @@ function Home() {
     </section>
 
     {/* best at what we do Booking  */}
-    <section className='p-20 bg-tertiary-100 h-full flex flex-col items-center'>
+    <section className='py-12 bg-tertiary-100 h-full'>
         <h3 className="mb-4 text-center text-5xl lg:mx-auto text-gray-900 font-semibold md:text-6xl">We are best at what we do</h3>
-        <div className='flex items-center justify-center p-6 md:w-6/12'>
-            <p className='font-semibold text-gray-900'>
+        <div className='flex items-center justify-center p-6'>
+            <p className='font-semibold text-gray-900 text-center'>
                 Ile has been in the interior deco industry for over a decade now, so if you want that nice and unique touch to your house, workspace, office et.t.c. Ile is the right place for you.
             </p>
         </div>
-        <div className='mt-7'>
-            <Link to='/session' className='block bg-primary text-white px-10 py-3 text-xs font-light rounded-full tracking-wider'>Book Now</Link>
+        <div className='mt-7 flex justify-center'>
+            <Link to='/session' className='text-center bg-primary text-white px-4 py-3 text-xs font-light rounded-full tracking-wider'>Book Now</Link>
         </div>
     </section>
 
     {/* Satisfaction */}
     <section className='bg-white h-full flex items-center justify-center p-10'>
-        <h3 className='text-5xl font-semibold'>Your satisfaction is what matters.</h3>
+        <h3 className='text-5xl font-semibold text-center'>Your satisfaction is what matters.</h3>
     </section>
 
     {/* We are Unique  */}
@@ -253,10 +253,10 @@ function Home() {
     {/* Book a session */}
     <section className='h-56 flex flex-col justify-center items-center p-16' style={{ backgroundImage: `url(${Session})` }}>
         <div className="">
-            <h4 className="text-5xl text-white">BOOK A SESSION</h4>
+            <h4 className="md:text-5xl text-4xl text-white text-center">BOOK A SESSION</h4>
         </div>
         <div>
-            <Link to='/session' className='mt-5 block bg-secondary-100 text-white px-10 py-3 text-xs font-light rounded-full tracking-wider'>Book Now</Link>
+            <Link to='/session' className='mt-5 block bg-secondary-100 text-white font-bold px-10 py-3 text-xs rounded-full tracking-wider'>Book Now</Link>
         </div>
     </section>
 
