@@ -3,13 +3,13 @@ import { Link } from "react-router-dom"
 function Footer() {
   return (
     <div>
-        <div className="md:flex md:items-center md:justify-between flex justify-around py-10 px-10">
-            <Link to='/blog' className="md:text-4xl font-bold ">BLOG</Link>
-            <Link to='/about' className="md:text-4xl font-bold ">ABOUT US</Link>
-            <Link to='/partner' className="md:text-4xl font-bold ">PARTNER</Link>
-            <Link to='/career' className="md:text-4xl font-bold ">CAREER</Link>
+        <div className="md:flex md:items-center md:justify-between flex justify-around py-10 px-2">
+            <Link to='/blog' className="md:text-4xl text-md  font-bold ">BLOG</Link>
+            <Link to='/about' className="md:text-4xl text-md font-bold ">ABOUT US</Link>
+            <Link to='/partner' className="md:text-4xl text-md font-bold ">PARTNER</Link>
+            <Link to='/career' className="md:text-4xl text-md font-bold ">CAREER</Link>
         </div>
-        <div className="md:flex md:justify-between py-1 px-10 flex justify-around">
+        <div className="md:flex md:justify-between py-1 flex justify-around">
             {/* <h1 className="md:text-2xl font-semibold md:flex">Designed by
                 Overflow
                  <span>

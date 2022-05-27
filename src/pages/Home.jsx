@@ -28,7 +28,7 @@ function Home() {
         </div>
 
         <div className="flex flex-col items-center mt-36">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+            <svg xmlns="http://www.w3.org/2000/svg" className="animate-bounce h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
             </svg>
             <h5 className='text-gray-400'>Scroll Down</h5>
@@ -125,8 +125,8 @@ function Home() {
     </section>
 
     {/* Satisfaction */}
-    <section className='bg-white h-full flex items-center justify-center p-10'>
-        <h3 className='text-5xl font-semibold text-center'>Your satisfaction is what matters.</h3>
+    <section className='bg-white h-full flex items-center justify-center md:p-10 py-10'>
+        <h3 className='md:text-5xl text-2xl font-semibold text-center'>Your satisfaction is what matters.</h3>
     </section>
 
     {/* We are Unique  */}
@@ -251,12 +251,12 @@ function Home() {
     </section>
 
     {/* Book a session */}
-    <section className='h-56 flex flex-col justify-center items-center p-16' style={{ backgroundImage: `url(${Session})` }}>
+    <section className='h-56 flex flex-col justify-around items-center ' style={{ backgroundImage: `url(${Session})` }}>
         <div className="">
-            <h4 className="md:text-5xl text-4xl text-white text-center">BOOK A SESSION</h4>
+            <h4 className="md:text-5xl text-3xl font-bold text-white text-center">BOOK A SESSION</h4>
         </div>
         <div>
-            <Link to='/session' className='mt-5 block bg-secondary-100 text-white font-bold px-10 py-3 text-xs rounded-full tracking-wider'>Book Now</Link>
+            <Link to='/session' className='block bg-secondary-100 text-white font-bold px-10 py-3 text-xs rounded-full tracking-wider'>Book Now</Link>
         </div>
     </section>
 
