@@ -8,6 +8,7 @@ import Blog from './pages/Blog';
 import Session from './pages/Session';
 import Partner from './pages/Partner';
 import Career from './pages/Career';
+import Project from './pages/projects/Project'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='/session' element={<Session />} />
           <Route path='/career' element={<Career />} />
           <Route path='/partner' element={<Partner />} />
+          <Route path='/project/:projectName' element={<Project />} />
         </Routes>
 
         <Footer />

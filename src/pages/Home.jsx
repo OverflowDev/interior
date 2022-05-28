@@ -42,10 +42,10 @@ function Home() {
         <div className="flex overflow-x-scroll pb-10 scrollbar-hide">
             <div className="flex flex-nowrap lg:ml-40 md:ml-20 ml-10">
                 
-                <div className="inline-block px-8 mr-7">
-                    <div className="relative max-w-md w-96 h-96 py-4 px-8 my-16 rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out object-contain">
+                <div className="inline-block px-6 mr-4">
+                    <div className="relative max-w-md w-64 h-64 md:w-96 md:h-96 py-4 px-6 my-16 rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out object-contain">
                         <img src={feature} alt="Features" className='absolute inset-0 w-full h-full object-cover' />
-                        <div className="absolute -left-14 top-40 -mt-16">
+                        <Link to='/project/just-a-touch' className="absolute -left-14 top-40 -mt-16">
                             <div className="bg-white shadow-lg rounded w-44 h-44">
                                 <div className="flex flex-col items-center">
                                     <h1 className='text-center font-bold text-4xl mt-3'>Just a touch</h1>
@@ -55,13 +55,13 @@ function Home() {
                                     </svg>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
-                <div className="inline-block px-6 mr-7">
-                    <div className="relative max-w-md w-96 h-96 py-4 px-8 my-16 rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out object-contain">
+                <div className="inline-block px-6 mr-4">
+                    <div className="relative max-w-md w-64 h-64 md:w-96 md:h-96 py-4 px-6 my-16 rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out object-contain">
                         <img src={feature} alt="Features" className='absolute inset-0 w-full h-full object-cover' />
-                        <div className="absolute -left-14 top-40 -mt-16">
+                        <Link to='/project/just-a-touch' className="absolute -left-14 top-40 -mt-16">
                             <div className="bg-white shadow-lg rounded w-44 h-44">
                                 <div className="flex flex-col items-center">
                                     <h1 className='text-center font-bold text-4xl mt-3'>Just a touch</h1>
@@ -71,13 +71,13 @@ function Home() {
                                     </svg>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
-                <div className="inline-block px-6 mr-7">
-                    <div className="relative max-w-md w-96 h-96 py-4 px-8 my-16 rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out object-contain">
+                <div className="inline-block px-6 mr-4">
+                    <div className="relative max-w-md w-64 h-64 md:w-96 md:h-96 py-4 px-6 my-16 rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out object-contain">
                         <img src={feature} alt="Features" className='absolute inset-0 w-full h-full object-cover' />
-                        <div className="absolute -left-14 top-40 -mt-16">
+                        <Link to='/project/just-a-touch' className="absolute -left-14 top-40 -mt-16">
                             <div className="bg-white shadow-lg rounded w-44 h-44">
                                 <div className="flex flex-col items-center">
                                     <h1 className='text-center font-bold text-4xl mt-3'>Just a touch</h1>
@@ -87,13 +87,13 @@ function Home() {
                                     </svg>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
-                <div className="inline-block px-6 mr-7">
-                    <div className="relative max-w-md w-96 h-96 py-4 px-8 my-16 rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out object-contain">
+                <div className="inline-block px-6 mr-4">
+                    <div className="relative max-w-md w-64 h-64 md:w-96 md:h-96 py-4 px-6 my-16 rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out object-contain">
                         <img src={feature} alt="Features" className='absolute inset-0 w-full h-full object-cover' />
-                        <div className="absolute -left-14 top-40 -mt-16">
+                        <Link to='/project/just-a-touch' className="absolute -left-14 top-40 -mt-16">
                             <div className="bg-white shadow-lg rounded w-44 h-44">
                                 <div className="flex flex-col items-center">
                                     <h1 className='text-center font-bold text-4xl mt-3'>Just a touch</h1>
@@ -103,10 +103,10 @@ function Home() {
                                     </svg>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
-
+                
             </div>
         </div>
     </section>
