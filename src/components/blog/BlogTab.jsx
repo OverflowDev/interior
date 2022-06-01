@@ -1,14 +1,44 @@
-import {useState} from 'react'
+import BlogData from '../../data/BlogData'
 
 
-function BlogTab({blog}) {
+function BlogTab({ filterBlog, setBlog, blogItems}) {
 
   return (
     <div className='mt-6'>
 
       <div className='md:flex md:items-center ml-12'>
 
-        <div className='flex flex-wrap md:flex mt-4'>
+        <div className="flex flex-wrap md:flex mt-4">
+
+          {blogItems.map((Val, id) => {
+            return (
+              <button 
+                className={
+                  Val.type ?
+                  'rounded-full font-semibold text-white mb-4 mr-4 py-2 px-8 border-2 border-primary bg-primary' 
+                  :
+                  'rounded-full hover:bg-primary hover:bg-opacity-75 hover:border-0 hover:text-white  font-semibold text-primary mb-4 mr-4 py-2 px-8 border-2 border-primary'
+                }
+                onClick={() => {
+                    filterBlog(Val);
+                    
+                }}
+                key={id}
+              >
+              {Val}
+              </button>
+            )
+          })}
+          <button
+           className='rounded-full hover:bg-primary hover:bg-opacity-75 hover:border-0 hover:text-white  font-semibold text-primary mb-4 mr-4 py-2 px-8 border-2 border-primary'
+            onClick={() => setBlog(BlogData)}
+          >
+              All
+          </button>
+
+        </div>
+
+        {/* <div className='flex flex-wrap md:flex mt-4'>
           <button className='rounded-full font-semibold text-white mb-4 mr-4 py-2 px-8 border-2 border-primary bg-primary'>
               All
           </button>
@@ -24,9 +54,8 @@ function BlogTab({blog}) {
           <button className='rounded-full hover:bg-primary hover:bg-opacity-75 hover:border-0 hover:text-white font-semibold text-primary mb-4 mr-4 py-2 px-8 border-2 border-primary '>
               Outdoor
           </button>
+        </div> */}
 
-
-      </div>
         {/* Search  */}
         <div className="relative text-primary md:ml-32">
           <span className="absolute inset-y-0 left-0 flex items-center pl-2">
@@ -43,6 +72,7 @@ function BlogTab({blog}) {
             onChange={(e) => (e.target.value)}
           />
         </div>
+
       </div>
 
     </div>

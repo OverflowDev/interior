@@ -1,12 +1,12 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
-import { BlogProvider } from './context/BlogContext';
 
 import Navbar from './components/layouts/Navbar';
 import Footer from './components/layouts/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Blog from './components/blog/Blog';
+import SingleBlog from './components/blog/SingleBlog';
 import Session from './pages/Session';
 import Partner from './pages/Partner';
 import Career from './pages/Career';
@@ -24,10 +24,11 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/blog' element={<Blog />} />
+            <Route path='/blog/:blogName' element={<SingleBlog />} />
             <Route path='/session' element={<Session />} />
             <Route path='/career' element={<Career />} />
             <Route path='/partner' element={<Partner />} />
-            <Route path='/project/:projectName' element={<Project />} />
+            <Route path='/project/:id' element={<Project />} />
           </Routes>
 
           <Footer />
