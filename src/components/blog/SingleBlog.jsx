@@ -75,10 +75,16 @@ function SingleBlog() {
                 </div>
               </header>
 
-              <div className='flex'>
-                <p className='text-center'>{blog.des1}</p>
-              </div>
 
+            </div>
+
+            <div className='px-2 md:px-24 mt-3'>
+              <p className='text-center font-light'>{blog.des1}</p>
+              <div className='flex justify-center p-4'>
+                <img src={blog.imgUrl} alt="blog" className='bg-cover h-60'  />
+              </div>
+              <h3 className='text-center font-bold mt-2'>{blog.des2Title}</h3>
+              <h3 className='text-center font-light'>{blog.des2}</h3>
             </div>
             
 
