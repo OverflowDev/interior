@@ -24,11 +24,11 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/blog' element={<Blog />} />
-            <Route path='/blog/:blogName' element={<SingleBlog />} />
+            <Route path='/blog/:id' element={<SingleBlog />} />
             <Route path='/session' element={<Session />} />
             <Route path='/career' element={<Career />} />
             <Route path='/partner' element={<Partner />} />
-            <Route path='/project/:id' element={<Project />} />
+            <Route path='/project/:projectName' element={<Project />} />
           </Routes>
 
           <Footer />
