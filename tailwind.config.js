@@ -2,9 +2,11 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 // const plugin = require('tailwindcss/plugin')
 
 module.exports = {
+
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+
   theme: {
     extend: {
 
@@ -27,19 +29,9 @@ module.exports = {
 
     },
   },
+
   plugins: [
-    require('tailwind-scrollbar-hide')
-    // plugin(function({ addUtilities }) {
-    //   addUtilities({
-    //   /* Hide scrollbar for IE, Edge and Firefox */
-    //   '.no-scrollbar': {
-    //     '-ms-overflow-style': 'none',
-    //     'scrollbar-width': 'none', 
-    //     '&::-webkit-scrollbar': {
-    //       display: 'none'
-    //     }
-    //   }
-    //   })
-    // })
+    require('tailwind-scrollbar-hide'),
+    require("daisyui")
   ],
 }
